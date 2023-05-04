@@ -1,0 +1,266 @@
+<html style="width: 1031px; height: 580px;"><head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, shrink-to-fit=no viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="robots" content="noindex, follow">
+		<link rel="icon" type="image/x-icon" href="https://a.poki.com/img/favicon.ico">
+
+		
+
+		
+<style>
+* {
+	box-sizing: border-box;
+}
+
+/* SAFARI GROWING IFRAME FIX */
+html, body { height: 100%; width: 100%; overflow: hidden; }
+body { overflow: auto;-webkit-overflow-scrolling: touch; }
+/* END SAFARI GROWING IFRAME FIX */
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #002B50;
+}
+
+#gameframe {
+	flex-grow: 1;
+	border: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 999999;
+	position: relative;
+	transform-origin: bottom left;
+	transform: scale3d(1, 1, 1); /* hardware accelerated scaling */
+	transition: transform 0.3s ease-in;
+	will-change: transform;
+	/* iOS safari growing iframe fix */
+	height: 1px; /* this works because flex-grow is more important */
+	min-width: 100%;
+	width: 1px;
+}
+
+#footer {
+	padding: 10px 16px;
+	height: 64px;
+	width: 100%;
+	background: #fff;
+	display: flex;
+}
+
+#store-info,
+#game-info {
+	display: flex;
+	flex-direction: column;
+}
+
+#game-info {
+	flex-grow: 1;
+}
+
+#store-info {
+	flex-shrink: 1;
+	justify-content: center;
+    align-items: center;
+}
+
+#store-info {
+	flex-direction: row;
+	margin: 0 16px;
+}
+
+h2{
+	font-size:inherit;
+}
+
+#game-info h2 {
+	font-family: Torus, Arial, sans-serif;
+	font-size: 20px;
+	color: #002B50;
+	margin: 2px 0 0;
+	line-height:24px;
+}
+
+#game-info p {
+	font-family: 'Proxima Nova', Arial, sans-serif;
+	color: #7E91AB;
+	font-size: min(max(8px, 3vw), 12px);
+	margin: 0;
+	white-space: nowrap;
+}
+
+#thumb-info {
+	display:flex;
+}
+
+#thumb {
+	flex-shrink: 0;
+	width: 44px;
+	height: 44px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.24);
+	margin-right: 16px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+#poki-logo {
+	flex-shrink: 0;
+}
+
+#poki-logo-img {
+	margin-top: -4px;
+	height: 52px;
+	vertical-align: bottom;
+}
+
+.store-link {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 8px;
+	max-width: 130px;
+}
+
+.store-link img {
+	width: 100%;
+}
+
+#adInfo {
+	padding: 10px 16px;
+	height: 64px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left = 0;
+	background: #FFF;
+	display: none;
+	alignItems: center;
+	pointerEvents: none;
+	transition: opacity 500ms ease-in;
+}
+
+#adInfo .logo {
+	margin: 4px;
+}
+
+#adInfo .textContainer {
+	display: inline-block;
+	marginLeft: 16px;
+}
+
+.textContainer > .title {
+	font: bold 16px/20px Proxima Nova;
+	color: #002B50;
+	margin: 0;
+}
+
+.textContainer > .status {
+	font: 12px/16px Proxima Nova;
+	color: #5D6B84;
+	margin: 0;
+}
+
+@keyframes scaleDelay {
+	0%,
+	80%,
+	100% {
+		transform: scale(0);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+}
+.spinner {
+	position: absolute;
+	display: flex;
+	top: 50%;
+	left: 50%;
+	margin-left: -33px;
+	margin-top: -9px;
+	width: 66px;
+}
+.spinner > div {
+	width: 18px;
+	height: 18px;
+	margin: 0 2px;
+	border-radius: 100%;
+	background: #fff;
+	animation: scaleDelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+	animation-delay: -.32s;
+}
+.spinner .bounce2 {
+	animation-delay: -.16s;
+}
+</style>
+
+
+		
+
+		<link rel="canonical" href="https://poki.com/en/g/monkey-mart">
+
+	</head>
+	<body style="width: 1031px; height: 580px;">
+		
+
+		<iframe id="gameframe" src="https://1183520a-1ec4-4f33-a7ce-7673c60f912c.poki-gdn.com/1e91ea24-aa6c-4eff-8049-42f56c2ec118/poki-savegame-safarisavegame.html?next=https%3A%2F%2F1183520a-1ec4-4f33-a7ce-7673c60f912c.poki-gdn.com%2F1e91ea24-aa6c-4eff-8049-42f56c2ec118%2Findex.html%3Fcountry%3DUS%26ccpaApplies%3D0%26url_referrer%3Dhttps%253A%252F%252Fpoki.com%252F%26tag%3Dpg-v3.85.0-exp-psize.0%26site_id%3D3%26iso_lang%3Den%26poki_url%3Dhttps%253A%252F%252Fpoki.com%252Fen%252Fg%252Fmonkey-mart%26categories%3D4%252C52%252C64%252C69%252C103%252C118%252C414%252C929%252C1014%252C1140%252C1141%252C1163%26ab%3Dv2.339.0%26experiment%3Da-5aeb3868%26game_id%3D1183520a-1ec4-4f33-a7ce-7673c60f912c%26game_version_id%3D1e91ea24-aa6c-4eff-8049-42f56c2ec118" allow="autoplay; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write; web-share" scrolling="no"></iframe>
+
+		<script type="text/javascript">
+		window.PARAMS = {"gameUri":"https://1183520a-1ec4-4f33-a7ce-7673c60f912c.poki-gdn.com/1e91ea24-aa6c-4eff-8049-42f56c2ec118/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fpoki.com%2F&tag=pg-v3.85.0-exp-psize.0&site_id=3&iso_lang=en&poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Fmonkey-mart&categories=4%2C52%2C64%2C69%2C103%2C118%2C414%2C929%2C1014%2C1140%2C1141%2C1163&ab=v2.339.0&experiment=a-5aeb3868&game_id=1183520a-1ec4-4f33-a7ce-7673c60f912c&game_version_id=1e91ea24-aa6c-4eff-8049-42f56c2ec118","onPoki":true,"onKids":false,"isLocal":false,"gameID":"1183520a-1ec4-4f33-a7ce-7673c60f912c","gameCode":"458768","gameVersion":"1e91ea24-aa6c-4eff-8049-42f56c2ec118","footer":null,"canonical":"https://poki.com/en/g/monkey-mart","contentGameID":30475,"bot":{"verified":false,"score":98,"isBot":false},"experiment":"a-5aeb3868","localisation":{"playingad":"Playing Ad","loading":"Loading...","preparing":"Preparing..."}};
+		</script>
+
+
+		
+
+		
+		<svg style="display:none">
+			<symbol id="favIcon" viewBox="0 0 36 36">
+				<g fill="none">
+					<path d="M18.0837 0C12.3552 0 7.6096 1.9567 4.3607 5.657 1.5489 8.86 0 13.224 0 17.945c0 4.8601 1.578 9.3005 4.444 12.5035C7.694 34.081 12.4103 36 18.0837 36c5.551 0 10.2023-1.914 13.4495-5.5361C34.4134 27.2512 36 22.8445 36 18.0556c0-4.8365-1.5852-9.2762-4.4637-12.5017C28.2945 1.921 23.6426 0 18.0837 0z" fill="#002b50"></path>
+					<path d="M18.0002 30.2865c-6.7867 0-12.3074-5.5782-12.3074-12.4339 0-6.5792 5.636-12.1375 12.3074-12.1375 6.6715 0 12.3076 5.5583 12.3076 12.1375 0 6.8557-5.5216 12.4339-12.3076 12.4339" fill="#fff"></path>
+					<path d="M17.9182 18.8012c-5.4178 0-8.1573.939-9.2878 1.2275.9465 4.3075 4.7498 7.5394 9.2878 7.5394 4.5374 0 8.3411-3.2319 9.2878-7.5394-1.1304-.2884-3.8702-1.2275-9.2878-1.2275" fill="#009cff"></path>
+				</g>
+			</symbol>
+		</svg>
+
+		<div id="adInfo">
+			<svg class="logo" width="36px" height="36px">
+				<use href="#favIcon"></use>
+			</svg>
+			<div class="textContainer">
+				<h2 class="title">We’ll be back after this short break</h2>
+				<p class="status">Playing Ad : 05</p>
+			</div>
+		</div>
+		
+
+		<script>
+			// [iOS Fix] Full screen, taking nav bar into account
+			const resize = () => {
+				window.scrollTo(0, 0);
+				document.body.style.width = document.documentElement.style.width = window.innerWidth+'px';
+				document.body.style.height = document.documentElement.style.height = window.innerHeight+'px';
+			};
+			window.addEventListener('resize', resize);
+			resize();
+
+			// [iOS] Fix initial resizing not going well
+			setTimeout(()=>{
+				resize();
+			},
+			3000)
+		</script>
+
+		<script>
+			
+			
+		</script>
+
+		
+	
+
+</body></html>
